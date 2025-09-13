@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
 
         chicken1.GetStatus();
 
+        Debug.Log("");
+
         //Cow
         cow1.GetStatus();
 
