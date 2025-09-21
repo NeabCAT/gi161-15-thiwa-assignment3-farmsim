@@ -5,15 +5,15 @@ public abstract class Animals : MonoBehaviour
     private string name;
     public string Name //Property
     {
-        get { return name; }
-        set { name = value; }
+        get => name;
+        private set => name = string.IsNullOrEmpty(value) ? "Unknown" : value;
     }
 
     private int hunger;
     public int Hunger //Property
     {
         get { return hunger; }
-        set
+        private set
         {
             if (value > 50) hunger = 50;
             else if (value < 0) hunger = 0;
@@ -25,7 +25,7 @@ public abstract class Animals : MonoBehaviour
     public int Happiness //Property
     {
         get { return happiness; }
-        set
+        private set
         {
             if (value > 50) happiness = 50;
             else if (value < 0) happiness = 0;

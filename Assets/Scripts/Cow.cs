@@ -5,7 +5,7 @@ public class Cow : Animals
     public float Milk //Property
     {
         get { return milk; }
-        set
+        private set
         {
             if (value < 0) milk = 0;
             else milk = value;

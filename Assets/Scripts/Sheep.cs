@@ -6,7 +6,7 @@ public class Sheep : Animals
     public int Wools //Property
     {
         get { return wools; }
-        set
+        private set
         {
             if (value < 0) wools = 0;
             else wools = value;

@@ -7,7 +7,7 @@ public class Chicken : Animals
     public int Eggs //Property
     {
         get { return eggs; }
-        set { if (value < 0) eggs = 0;
+        private set { if (value < 0) eggs = 0;
             else eggs = value;
             }
     }
