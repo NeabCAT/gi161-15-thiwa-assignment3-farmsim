@@ -1,27 +1,28 @@
 using UnityEngine;
 
-public class Chicken : Animals
+public class Sheep : Animals
 {
-   
-    private int eggs;
-    public int Eggs //Property
+    private int wools;
+    public int Wools //Property
     {
-        get { return eggs; }
-        set { if (value < 0) eggs = 0;
-            else eggs = value;
-            }
+        get { return wools; }
+        set
+        {
+            if (value < 0) wools = 0;
+            else wools = value;
+        }
     }
 
     public override void Init(string newName, int newHunger, int newhappiness)
     {
         base.Init(newName, newHunger, newhappiness);
-        Eggs = 0;
+        Wools = 0;
     }
 
 
     public override void MakeSound()
     {
-        Debug.Log($"{Name} say Clucks!!");
+        Debug.Log($"{Name} say Baeee!!");
     }
 
 
